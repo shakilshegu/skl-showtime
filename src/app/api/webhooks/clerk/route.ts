@@ -17,7 +17,7 @@ export async function POST(request: Request) {
       })
       return NextResponse.json({ status: 'success' })
     } catch (error) {
-      console.error('Error creating user:', error)
+      console.error('Error creating user:', error) 
       return NextResponse.json(
         { status: 'error', message: 'Failed to create user' },
         { status: 500 },
